@@ -1,4 +1,13 @@
 {
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
   "compilerOptions": {
     "lib": [
       "dom",
@@ -6,7 +15,6 @@
       "esnext"
     ],
     "allowJs": true,
-    "skipLibCheck": true,
     "strict": true,
     "noEmit": true,
     "esModuleInterop": true,
@@ -22,19 +30,11 @@
         "name": "next"
       }
     ],
+    "skipLibCheck": true,
     "paths": {
       "@/*": [
         "./*"
       ]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    ".next/types/**/*.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules"
-  ],
 }
